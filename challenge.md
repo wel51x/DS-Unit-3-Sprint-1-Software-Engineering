@@ -256,6 +256,8 @@ you can use [PEP8 online](http://pep8online.com/).
 Go for lint-free! If there's a stubborn warning or two you can't fix though,
 it's okay to leave a comment explaining it and move on.
 
+#### done, except that PEP8 goes overboard. Sheesh
+
 ### Part 7 - Questions (and your Answers)
 
 Acme Corporation isn't just a few `.py` files. If you want to grow in your
@@ -264,9 +266,23 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
+Answer: The extra sets of eyes that code reviews facilitate benefit in a number of ways:
+Others in the group might spot bugs the author has become inured to.
+They help in giving the group confidence that the code executes according to requirements.
+They allow for coding and documentation standards to be enforced, helping to ensure the
+ code base consistency and make it easier for others in the group to decipher and maintain
+ the author's canon.
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+
+Answer: Containers provide for a consistent experience, allowing code to be validated on
+ a mix of unique environments and (virtual) operating systems. Parameters and dependencies
+ can be set individually for each container in accordance with various target systems.
+ This ensures that a product will function correctly regardless of where it is deployed. It
+ reduces the need for a complex set of machines and operating systems for validation.
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
@@ -280,3 +296,5 @@ from Acme Corporation management. Thanks for your hard work!
 *Bonus!* Got this far? Read up on the [history of the fine Acme
 Corporation](https://en.wikipedia.org/wiki/Acme_Corporation), with decades of
 quality products and many satisfied customers (mostly coyotes).
+
+### beep-beep
