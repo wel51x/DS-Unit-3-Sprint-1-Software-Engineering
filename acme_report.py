@@ -1,11 +1,12 @@
 """
 method to randomly create product list
-Methods to create inventory report for based on these randomly created products
+method to create inventory report based on these randomly created products
 """
 import random
 from acme import Product
 
-def generate_products(number_of_products = 30):
+
+def generate_products(num_products=30):
     """
     Method to generate a parameterized number of products randomly
     Params:
@@ -16,7 +17,7 @@ def generate_products(number_of_products = 30):
     adjectives = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
     nouns = ['Anvil', 'Catapult' 'Disguise' 'Mousetrap', '???']
     products = {}
-    for prod in range(number_of_products):
+    for prod in range(num_products):
         name = random.choice(adjectives) + " " + random.choice(nouns)
         price = random.randint(5, 100)
         weight = random.randint(5, 100)
@@ -53,7 +54,8 @@ def inventory_report(products):
     print('Unique product names: ', len(set(names)))
     print('Average price: ', sum(prices) / float(len(prices)))
     print('Average weight: ', sum(weights) / float(len(weights)))
-    print('Average flammability: ', sum(flammabilities) / float(len(flammabilities)))
+    print('Average flammability: ', sum(flammabilities) /
+                                    float(len(flammabilities)))
 
 if __name__ == '__main__':
     inventory_report(generate_products())
