@@ -6,6 +6,7 @@ from acme import Product
 from acme import BoxingGlove
 import acme_report
 
+
 class AcmeProductTests(unittest.TestCase):
     """
     Making sure Acme products are the tops!
