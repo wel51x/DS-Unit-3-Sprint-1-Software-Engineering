@@ -1,5 +1,6 @@
 import random
 
+
 class Product:
     """
     Product class
@@ -46,6 +47,7 @@ class Product:
         else:
             return '...fizzle.'
 
+        
 class BoxingGlove(Product):
     """
     BoxingGlove class - subclass of Product
@@ -65,7 +67,8 @@ class BoxingGlove(Product):
 
     def explode(self):
         """
-        Method overrides superclass explode - returns a msg referencing the inexplosiveness(!) of boxing gloves
+        Method overrides superclass explode - returns a msg referencing the
+                                    inexplosiveness(!) of boxing gloves
         Params:  None
         Returns: string "...it's a glove."
         """
@@ -73,7 +76,8 @@ class BoxingGlove(Product):
 
     def punch(self):
         """
-        Subclass method to determine the effect of a punch is (depends strictly on weight)
+        Subclass method to determine the effect of a punch is
+                                    (depends strictly on weight)
         Params:  None
         Returns: string with appropriate response to punch
         """
